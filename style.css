@@ -1,0 +1,152 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+
+  .error{
+    border: 1px solid red;
+  }
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+body
+{
+    margin:0 auto;
+    padding:80px;
+    text-align:center;
+    height:200px;
+    box-sizing: border-box;
+}
+#wrapper
+{
+    width:auto;
+    padding:15px;
+    margin:0px auto;
+    text-align:center;
+    box-sizing: border-box;
+
+}
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+input
+{
+    width:200px;
+    height:30px;
+    font-size: 18px;
+    margin-right:6px;
+    margin:2px 4px;
+    border-radius:10px;
+    border:1px solid rgb(0, 0, 0);
+    padding:10px;
+}
+#ques
+{
+    background:none;
+    color:white;
+    border:none;
+    width:auto;
+    height:auto;
+    padding: 10px 12px;
+    border-radius:20px;
+    margin-bottom:10px ;
+    background-color: rgb(152 138 237);
+    font-size:20px;
+}
+#btn{
+    
+    font-size: 16px;
+    font-weight: bold;
+    background: #3598dc;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    min-width: 140px;
+}
+
+#answer{
+    color:green;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 600;
+}
+#inputs{
+    margin: 12px;
+}
+div#wrapper{
+
+    border: 3px solid transparent;
+    border-image-slice: 1;
+    margin-bottom: 19px;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+
+ }
+ #answer{
+  box-sizing: border-box;
+  overflow: auto;
+ }
+ .rainbow-text {
+  width: 350px;
+  text-align: center;
+  justify-content: center;
+  margin: 1px auto;
+}
